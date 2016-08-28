@@ -6,20 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Archives: 2016 | caitzh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Never reinvent wheel">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="caitzh">
 <meta property="og:url" content="http://yoursite.com/archives/2016/index.html">
 <meta property="og:site_name" content="caitzh">
-<meta property="og:description" content="Never reinvent wheel">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="caitzh">
-<meta name="twitter:description" content="Never reinvent wheel">
   
     <link rel="alternative" href="/atom.xml" title="caitzh" type="application/atom+xml">
   
   
-    <link rel="icon" href="/img/favicon.png">
+    
+      <link rel="icon" href="img/favicon.png">
+    
   
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -32,7 +31,10 @@
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			
-			<img src="/img/head.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			<img lazy-src="/img/head.png" class="js-avatar">
+				
+					<img lazy-src="/img/head.png" class="js-avatar">
+				
 			
 		</a>
 
@@ -41,7 +43,7 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">Never reinvent wheel</p>
+		<p class="header-subtitle">Never reinvent the wheel</p>
 		
 
 		
@@ -73,13 +75,13 @@
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
-						<li>Menu</li>
-						<li>Tags</li>
+						<li>菜单</li>
+						<li>标签</li>
 						
-						<li>Links</li>
+						<li>友情链接</li>
 						
 						
-						<li>Über</li>
+						<li>关于我</li>
 						
 					</ul>
 				</div>
@@ -119,17 +121,13 @@
 				<section class="switch-part switch-part3">
 					<div id="js-friends">
 					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.w3school.com.cn/">w3school_教程</a>
 			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://study.163.com/">网易云课堂</a>
 			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/">廖雪峰Git教程</a>
 			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://msdn.itellyou.cn/">itellyou资源</a>
 			        
 			        </div>
 				</section>
@@ -139,7 +137,7 @@
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+					<div id="js-aboutme">这个人很懒，什么都没有留下</div>
 				</section>
 				
 			</div>
@@ -158,14 +156,14 @@
 		<header id="header" class="inner">
 			<div class="profilepic">
 				
-					<img src="/img/head.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+					<img lazy-src="/img/head.png" class="js-avatar">
 				
 			</div>
 			<hgroup>
 			  <h1 class="header-author">caitzh</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">Never reinvent wheel</p>
+			<p class="header-subtitle">Never reinvent the wheel</p>
 			
 			<nav class="header-menu">
 				<ul>
@@ -205,14 +203,14 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       	<div class="article-meta">
-	      	<a href="/2016/08/21/hello-world/" class="archive-article-date">
+	      	<a href="/2016/08/21/hexo_yilia主题/" class="archive-article-date">
   	<time datetime="2016-08-21T05:54:49.628Z" itemprop="datePublished">Aug 21</time>
 </a>
         </div>
     	 
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/21/hello-world/">Hexo yilia主题</a>
+      <a class="archive-article-title" href="/2016/08/21/hexo_yilia主题/">Hexo yilia主题</a>
     </h1>
   
 
@@ -254,14 +252,14 @@
 	var yiliaConfig = {
 		fancybox: true,
 		mathjax: true,
-		animate: false,
+		animate: true,
 		isHome: false,
 		isPost: false,
 		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		root: /
+		root:  '/'
 	}
 </script>
 <script>
@@ -293,7 +291,10 @@ MathJax.Hub.Queue(function() {
 });
 </script>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script>
+	(function(){
+	 	document.write('<scr'+'ipt type="text/javascript" src="'+document.location.protocol+'//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">'+'</sc'+'ript>');
+	})();
 </script>
 
 
