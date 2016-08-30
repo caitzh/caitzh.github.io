@@ -16,7 +16,7 @@ Hexo安装和配置
 <meta property="og:description" content="Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：
 Hexo安装和配置
 之后我更换了yilia主题，但是出现了一些小问题，解决办法如下：">
-<meta property="og:updated_time" content="2016-08-30T15:00:34.147Z">
+<meta property="og:updated_time" content="2016-08-30T15:22:45.664Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo yilia主题">
 <meta name="twitter:description" content="Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：
@@ -243,6 +243,14 @@ Hexo安装和配置
 <h2 id="3-下拉菜单不显示"><a href="#3-下拉菜单不显示" class="headerlink" title="3. 下拉菜单不显示"></a>3. 下拉菜单不显示</h2><p>根据<a href="https://github.com/litten/hexo-theme-yilia/pull/277/commits/e9d46be8159faa9a17c25921bccd64bf28bc312a" target="_blank" rel="external">此链接</a>修改对应文件即可，此方法还可以解决上面第一个问题的头像动画效果<br><br></p>
 <h2 id="4-如何把房子的下拉菜单改成中文"><a href="#4-如何把房子的下拉菜单改成中文" class="headerlink" title="4. 如何把房子的下拉菜单改成中文"></a>4. 如何把房子的下拉菜单改成中文</h2><p>把 hexo 的配置文件<code>_config.yml</code>里的 language 设为 zh-Hans </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans</div></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="5-点击所有文章出错"><a href="#5-点击所有文章出错" class="headerlink" title="5. 点击所有文章出错"></a>5. 点击所有文章出错</h2><p>在本地可以打开，但是 deploy 到 github 上之后便无法打开，总是自动从 https 重定向到 http, 解决方法是把 <code>_config.yml</code> 里的 <code>menu/所有文章</code> 的最后加上一个 <code>/</code></p>
+<pre><code class="bash"><span class="comment"># 原来的</span>
+    所有文章: /archives
+<span class="comment"># 修改后</span>
+    所有文章: /archives/
+</code></pre>
+
       
     </div>
     
