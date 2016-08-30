@@ -16,7 +16,7 @@ Hexo安装和配置
 <meta property="og:description" content="Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：
 Hexo安装和配置
 之后我更换了yilia主题，但是出现了一些小问题，解决办法如下：">
-<meta property="og:updated_time" content="2016-08-28T12:06:29.531Z">
+<meta property="og:updated_time" content="2016-08-30T15:00:34.147Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo yilia主题">
 <meta name="twitter:description" content="Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：
@@ -231,8 +231,7 @@ Hexo安装和配置
       
         <p>Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：</p>
 <p><a href="http://www.jianshu.com/p/b7886271e21a" target="_blank" rel="external">Hexo安装和配置</a></p>
-<p>之后我更换了<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">yilia主题</a>，但是出现了一些小问题，解决办法如下：</p>
-<a id="more"></a>
+<p>之后我更换了<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">yilia主题</a>，但是出现了一些小问题，解决办法如下：<br><a id="more"></a></p>
 <h2 id="1-头像无法加载"><a href="#1-头像无法加载" class="headerlink" title="1. 头像无法加载"></a>1. 头像无法加载</h2><p>在 <code>_config.yml</code> 设置了 avatar 的 url 后，启动服务器，头像却无法显示，在浏览器按F12后发现，图片的url前自动加上了一个<code>null</code>，解决办法是 root 值不要放空，设为 “” 即可，如下图：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 是否需要修改 root 路径</span></div><div class="line"><span class="comment"># 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，</span></div><div class="line"><span class="comment"># 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。</span></div><div class="line">root: <span class="string">""</span></div></pre></td></tr></table></figure>
 <p>同时还需要把动画效果关闭, 若想不关闭动画效果，请看下面第三个问题”3.下拉菜单不显示”：</p>
