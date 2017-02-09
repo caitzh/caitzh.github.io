@@ -4,14 +4,24 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives | caitzh</title>
+  <title>Hexo yilia主题 | caitzh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="caitzh">
-<meta property="og:url" content="http://www.caitzh.cn/archives/index.html">
+  <meta name="description" content="Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：
+Hexo安装和配置
+之后我更换了yilia主题，但是出现了一些小问题，解决办法如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo yilia主题">
+<meta property="og:url" content="http://www.caitzh.cn/2016/08/30/hexo_yilia主题/index.html">
 <meta property="og:site_name" content="caitzh">
+<meta property="og:description" content="Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：
+Hexo安装和配置
+之后我更换了yilia主题，但是出现了一些小问题，解决办法如下：">
+<meta property="og:updated_time" content="2016-08-30T15:22:45.664Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="caitzh">
+<meta name="twitter:title" content="Hexo yilia主题">
+<meta name="twitter:description" content="Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：
+Hexo安装和配置
+之后我更换了yilia主题，但是出现了一些小问题，解决办法如下：">
   
     <link rel="alternative" href="/atom.xml" title="caitzh" type="application/atom+xml">
   
@@ -186,49 +196,76 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-hexo_yilia主题" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/08/30/hexo_yilia主题/" class="archive-article-date">
-  	<time datetime="2016-08-30T15:22:45.664Z" itemprop="datePublished">Aug 30</time>
+    <div class="article-meta">
+      <a href="/2016/08/30/hexo_yilia主题/" class="article-date">
+  	<time datetime="2016-08-30T15:22:45.664Z" itemprop="datePublished">2016-08-30</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/30/hexo_yilia主题/">Hexo yilia主题</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo yilia主题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Hexo可以很方便地创建个人博客，需要用到nodejs和github，参考教程如下：</p>
+<p><a href="http://www.jianshu.com/p/b7886271e21a" target="_blank" rel="external">Hexo安装和配置</a></p>
+<p>之后我更换了<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">yilia主题</a>，但是出现了一些小问题，解决办法如下：<br><a id="more"></a></p>
+<h2 id="1-头像无法加载"><a href="#1-头像无法加载" class="headerlink" title="1. 头像无法加载"></a>1. 头像无法加载</h2><p>在 <code>_config.yml</code> 设置了 avatar 的 url 后，启动服务器，头像却无法显示，在浏览器按F12后发现，图片的url前自动加上了一个<code>null</code>，解决办法是 root 值不要放空，设为 “” 即可，如下图：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 是否需要修改 root 路径</span></div><div class="line"><span class="comment"># 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，</span></div><div class="line"><span class="comment"># 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。</span></div><div class="line">root: <span class="string">""</span></div></pre></td></tr></table></figure>
+<p>同时还需要把动画效果关闭, 若想不关闭动画效果，请看下面第三个问题”3.下拉菜单不显示”：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 是否开启动画效果</span></div><div class="line">animate: <span class="literal">false</span></div></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="2-代码块出现滑动条"><a href="#2-代码块出现滑动条" class="headerlink" title="2. 代码块出现滑动条"></a>2. 代码块出现滑动条</h2><p>把<code>themes\yilia\source\css\_partial\highlight.styl</code> 里的68行 <code>height: 15px</code> 注释掉即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">//height: 15px</div></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="3-下拉菜单不显示"><a href="#3-下拉菜单不显示" class="headerlink" title="3. 下拉菜单不显示"></a>3. 下拉菜单不显示</h2><p>根据<a href="https://github.com/litten/hexo-theme-yilia/pull/277/commits/e9d46be8159faa9a17c25921bccd64bf28bc312a" target="_blank" rel="external">此链接</a>修改对应文件即可，此方法还可以解决上面第一个问题的头像动画效果<br><br></p>
+<h2 id="4-如何把房子的下拉菜单改成中文"><a href="#4-如何把房子的下拉菜单改成中文" class="headerlink" title="4. 如何把房子的下拉菜单改成中文"></a>4. 如何把房子的下拉菜单改成中文</h2><p>把 hexo 的配置文件<code>_config.yml</code>里的 language 设为 zh-Hans </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans</div></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="5-点击所有文章出错"><a href="#5-点击所有文章出错" class="headerlink" title="5. 点击所有文章出错"></a>5. 点击所有文章出错</h2><p>在本地可以打开，但是 deploy 到 github 上之后便无法打开，总是自动从 https 重定向到 http, 解决方法是把 <code>_config.yml</code> 里的 <code>menu/所有文章</code> 的最后加上一个 <code>/</code></p>
+<pre><code class="bash"><span class="comment"># 原来的</span>
+    所有文章: /archives
+<span class="comment"># 修改后</span>
+    所有文章: /archives/
+</code></pre>
+
+      
+    </div>
+    
+  </div>
+  
+    
+  
+</article>
+
+
+
+
+
+
+
 
 </div>
       <footer id="footer">
@@ -255,8 +292,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
